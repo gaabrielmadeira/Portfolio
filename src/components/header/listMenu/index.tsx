@@ -1,14 +1,21 @@
-import { TextMenu } from "../../../styles/typograph";
-import { StyledMenu } from "./style";
-
+import { TextButton } from "../../../styles/typograph";
+import { StyledMenu, StyledItensMenu } from "./style";
 
 export const ListMenu = () => {
     return (
         <StyledMenu>
-            <TextMenu>Home</TextMenu>
-            <TextMenu>Sobre mim</TextMenu>
-            <TextMenu>Projetos</TextMenu>
-            <TextMenu>Contatos</TextMenu>
+            <StyledItensMenu>
+                <TextButton size="large">Home</TextButton>
+            </StyledItensMenu>
+            <StyledItensMenu>
+                <TextButton size="large">Sobre mim</TextButton>
+            </StyledItensMenu>
+            <StyledItensMenu>
+                <TextButton size="large">Projetos</TextButton>
+            </StyledItensMenu>
+            <StyledItensMenu>
+                <TextButton size="large">Contatos</TextButton>
+            </StyledItensMenu>
         </StyledMenu>
     )
 } 
