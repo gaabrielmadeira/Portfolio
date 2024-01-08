@@ -71,3 +71,9 @@ export const StyledContainerTag = styled.div`
     justify-content: center;
     align-items: center;
 `
+
+export const StyledLinkRepo = styled.a`
+    display: flex;
+    align-items: center;
+    gap: 0.3125rem;
+`

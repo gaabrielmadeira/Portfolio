@@ -1,5 +1,6 @@
+import { CgCodeSlash } from "react-icons/cg"
 import { TextTwo } from "../../../styles/typograph"
-import { StyledContainerTag, StyledListProjects, StyledProjectsItens, StyledTag } from "./style"
+import { StyledContainerTag, StyledLinkRepo, StyledListProjects, StyledProjectsItens, StyledTag } from "./style"
 
 export const ListProjects = () => {
     return (
@@ -13,11 +14,14 @@ export const ListProjects = () => {
                     </a>
                     <StyledTag>Fullstack</StyledTag>
                 </StyledContainerTag>
-                <a href="https://github.com/gaabrielmadeira/ConnectHubFullStack" target="_blanck">
+                <StyledLinkRepo href="https://github.com/gaabrielmadeira/ConnectHubFullStack" target="_blanck">
                     <TextTwo size="small" color="repo">
                         Repositório
                     </TextTwo>
-                </a>
+                    <CgCodeSlash style={{
+                        color: "var(--color-grey-0)"
+                    }} />
+                </StyledLinkRepo>
             </StyledProjectsItens>
             <StyledProjectsItens>
                 <StyledContainerTag>
@@ -28,11 +32,14 @@ export const ListProjects = () => {
                     </a>
                     <StyledTag>Front End</StyledTag>
                 </StyledContainerTag>
-                <a href="https://github.com/gaabrielmadeira/KenzieMove" target="_blanck">
+                <StyledLinkRepo href="https://github.com/gaabrielmadeira/KenzieMove" target="_blanck">
                     <TextTwo size="small" color="repo">
                         Repositório
                     </TextTwo>
-                </a>
+                    <CgCodeSlash style={{
+                        color: "var(--color-grey-0)"
+                    }} />
+                </StyledLinkRepo>
             </StyledProjectsItens>
             <StyledProjectsItens color="light">
                 <StyledContainerTag>
@@ -43,11 +50,14 @@ export const ListProjects = () => {
                     </a>
                     <StyledTag>Front End</StyledTag>
                 </StyledContainerTag>
-                <a href="#" target="_blanck">
+                <StyledLinkRepo href="#" target="_blanck">
                     <TextTwo size="small" color="repo">
                         Repositório
                     </TextTwo>
-                </a>
+                    <CgCodeSlash style={{
+                        color: "var(--color-grey-0)"
+                    }} />
+                </StyledLinkRepo>
             </StyledProjectsItens>
             <StyledProjectsItens>
                 <StyledContainerTag>
@@ -58,11 +68,14 @@ export const ListProjects = () => {
                     </a>
                     <StyledTag>Front End</StyledTag>
                 </StyledContainerTag>
-                <a href="#" target="_blanck">
+                <StyledLinkRepo href="#" target="_blanck">
                     <TextTwo size="small" color="repo">
                         Repositório
                     </TextTwo>
-                </a>
+                    <CgCodeSlash style={{
+                        color: "var(--color-grey-0)"
+                    }} />
+                </StyledLinkRepo>
             </StyledProjectsItens>
         </StyledListProjects>
     )
