@@ -34,11 +34,12 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	background: var(--color-grey-1);
+	background-color: var(--color-grey-0);
 }
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
@@ -53,8 +54,52 @@ table {
 }
 
 button {
-	background: none;
 	border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+input{
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+img {
+    box-sizing: border-box;
+    object-fit:contain;
+}
+
+select {
+    border: none;
+    background: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+textarea {
+    border: none;
+    outline: none;
+    resize: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
 	cursor: pointer;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: lightgray;
 }
 `
