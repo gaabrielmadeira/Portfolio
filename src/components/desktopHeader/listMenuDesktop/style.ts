@@ -10,10 +10,6 @@ export const StyledMenuDesktop = styled.ul`
     align-items: center;
     gap: 15px;
 `
-export const StyledItensMenuDesktop = styled.li`
-    display: flex;
-    align-items: center;
-`
 export const StyledIconDesktop = styled(HiOutlineHashtag)`
     color: var(--color-grey-3);
 `

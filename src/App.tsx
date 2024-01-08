@@ -13,7 +13,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 
 function App() {
-  const {modalIsOpen} = useContext(ContactContext);
+  const { modalIsOpen } = useContext(ContactContext);
 
   return (
     <>
@@ -22,15 +22,15 @@ function App() {
       <GlobalStyles />
       <Header />
       <main>
-        <MainSection />
-        <AboutMeSection />
-        <TechnologiesSection />
-        <ProjectsSection />
+          <MainSection />
+          <AboutMeSection />
+          <TechnologiesSection />
+          <ProjectsSection />
       </main>
       <Footer />
-      { modalIsOpen && <ContactModal /> }
+      {modalIsOpen && <ContactModal />}
     </>
-  )
+  );
 }
 
 export default App

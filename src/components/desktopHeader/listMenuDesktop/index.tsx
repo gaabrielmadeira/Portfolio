@@ -1,26 +1,31 @@
 import { TextButtonDesktop } from "../../../styles/typograph";
-import { StyledMenuDesktop, StyledItensMenuDesktop, StyledIconDesktop } from "./style";
+import { StyledMenuDesktop } from "./style";
+import { Link } from 'react-scroll';
 
 
 export const ListMenuDesktop = () => {
     return (
         <StyledMenuDesktop>
-            <StyledItensMenuDesktop>
-                <StyledIconDesktop />
-                <TextButtonDesktop size="small">Home</TextButtonDesktop>
-            </StyledItensMenuDesktop>
-            <StyledItensMenuDesktop>
-                <StyledIconDesktop />
-                <TextButtonDesktop size="small">Sobre mim</TextButtonDesktop>
-            </StyledItensMenuDesktop>
-            <StyledItensMenuDesktop>
-                <StyledIconDesktop />
-                <TextButtonDesktop size="small">Projetos</TextButtonDesktop>
-            </StyledItensMenuDesktop>
-            <StyledItensMenuDesktop>
-                <StyledIconDesktop />
-                <TextButtonDesktop size="small">Contatos</TextButtonDesktop>
-            </StyledItensMenuDesktop>
+            <li>
+                <Link to="about" smooth={true} duration={500}>
+                    <TextButtonDesktop size="small">Sobre mim</TextButtonDesktop>
+                </Link>
+            </li>
+            <li>
+                <Link to="skills" smooth={true} duration={500}>
+                    <TextButtonDesktop size="small">Habilidades</TextButtonDesktop>
+                </Link>
+            </li>
+            <li>
+                <Link to="projects" smooth={true} duration={500}>
+                    <TextButtonDesktop size="small">Projetos</TextButtonDesktop>
+                </Link>
+            </li>
+            <li>
+                <Link to="contacts" smooth={true} duration={500}>
+                    <TextButtonDesktop size="small">Contatos</TextButtonDesktop>
+                </Link>
+            </li>
         </StyledMenuDesktop>
     )
 } 

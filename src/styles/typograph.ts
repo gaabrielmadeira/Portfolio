@@ -51,7 +51,7 @@ const Title = css<ITitleProps>`
 `
 
 interface ITextProps {
-    color?: "alternative" | "light";
+    color?: "alternative" | "light" | "repo";
     size: "small" | "large";
 }
 
@@ -82,6 +82,10 @@ export const Text = css<ITextProps>`
             case "light":
                 return css`
                     color: var(--color-grey-3);
+                `
+            case "repo":
+                return css`
+                    color: var(--color-grey-0);
                 `
             default:
                 return css`

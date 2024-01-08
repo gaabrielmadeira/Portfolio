@@ -18,9 +18,12 @@ export const StyledProjectsItens = styled.li<IStyledProjectsItens>`
     width: clamp(155px, 20vw, 250px);
     height: 250px;
 
+    padding: 15px;
+
     border-radius: 3px;
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     ${({color}) => {
@@ -35,6 +38,13 @@ export const StyledProjectsItens = styled.li<IStyledProjectsItens>`
                 `
         }
     }}
+
+    &:hover{
+        scale: 1.1;
+        transition: transform 0.5 ease-in-out;
+        border-radius: 10px;
+        box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.7);
+    }
 `
 
 export const StyledTag = styled.span`

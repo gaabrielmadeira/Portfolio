@@ -16,14 +16,14 @@ export const GlobalStyles = createGlobalStyle`
         --font-primary: "Roboto", sans-serif;
         --font-secundary: "Crimson Text", serif;
 
-        --font-size-0: 58px;
-        --font-size-1: 42px;
-        --font-size-2: 32px;
-        --font-size-3: 28px;
-        --font-size-4: 24px;
-        --font-size-5: 18px;
-        --font-size-6: 14px;
-        --font-size-7: 10px;
+        --font-size-0: 3.625rem;
+        --font-size-1: 2.625rem;
+        --font-size-2: 2rem;
+        --font-size-3: 1.75rem;
+        --font-size-4: 1.5rem;
+        --font-size-5: 1.125rem;
+        --font-size-6: 0.875rem;
+        --font-size-7: 0.625rem;
     };
 `
 export const StyledLogo = styled.img`

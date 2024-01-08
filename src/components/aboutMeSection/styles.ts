@@ -17,7 +17,7 @@ export const StyledAboutMeSection = styled.section`
     gap: 1.875rem;
 
     @media (min-width: 950px) {
-        height: 400px;
+        height: 450px;
 
         flex-direction: row;
         margin-top: 40px;

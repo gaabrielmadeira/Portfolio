@@ -5,8 +5,8 @@ import { ContactProvider } from "./providers/contactContext.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <ContactProvider>
-      <App />
-    </ContactProvider>
+      <ContactProvider>
+        <App />
+      </ContactProvider>
   </React.StrictMode>
 )

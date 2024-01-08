@@ -13,6 +13,11 @@ export const ListProjects = () => {
                     </a>
                     <StyledTag>Fullstack</StyledTag>
                 </StyledContainerTag>
+                <a href="https://github.com/gaabrielmadeira/ConnectHubFullStack" target="_blanck">
+                    <TextTwo size="small" color="repo">
+                        Repositório
+                    </TextTwo>
+                </a>
             </StyledProjectsItens>
             <StyledProjectsItens>
                 <StyledContainerTag>
@@ -23,6 +28,11 @@ export const ListProjects = () => {
                     </a>
                     <StyledTag>Front End</StyledTag>
                 </StyledContainerTag>
+                <a href="https://github.com/gaabrielmadeira/KenzieMove" target="_blanck">
+                    <TextTwo size="small" color="repo">
+                        Repositório
+                    </TextTwo>
+                </a>
             </StyledProjectsItens>
             <StyledProjectsItens color="light">
                 <StyledContainerTag>
@@ -33,6 +43,11 @@ export const ListProjects = () => {
                     </a>
                     <StyledTag>Front End</StyledTag>
                 </StyledContainerTag>
+                <a href="#" target="_blanck">
+                    <TextTwo size="small" color="repo">
+                        Repositório
+                    </TextTwo>
+                </a>
             </StyledProjectsItens>
             <StyledProjectsItens>
                 <StyledContainerTag>
@@ -43,6 +58,11 @@ export const ListProjects = () => {
                     </a>
                     <StyledTag>Front End</StyledTag>
                 </StyledContainerTag>
+                <a href="#" target="_blanck">
+                    <TextTwo size="small" color="repo">
+                        Repositório
+                    </TextTwo>
+                </a>
             </StyledProjectsItens>
         </StyledListProjects>
     )

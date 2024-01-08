@@ -2,9 +2,13 @@ import styled from "styled-components";
 
 export const StyledContainerSkills = styled.section`
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
 
     background: var(--color-grey-5);
+
+    @media (min-width: 950px){
+        height: 100vh;
+    }
 `
 
 export const StyledTechnologies = styled.section`
