@@ -1,35 +1,48 @@
 import { motion } from "framer-motion";
 import styled from "styled-components";
+import backgroundmain from "../../assets/backgroundhomepage.png";
+import backgroundmobile from "../../assets/backgroundresponsive.png";
 
 export const StyledMainSection = styled(motion.section)`
     width: 100%;
-    height: 90%;
+    height: 100vh;
+    padding: 0.625rem;
+
     position: relative;
-    
+
+    background-image: url(${backgroundmobile});
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 980px) {
+        background-image: url(${backgroundmain});
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+`
+export const StyledTitleDiv = styled.div`
+    width: 100%;
+    height: auto;
+    position: relative;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-`
-export const StyledDev = styled(motion.div)`
-    display: flex;
     align-items: center;
-    gap: 0.625rem;
-`
-export const StyledPhoto = styled.figure`
-    width: 250px;
-    height: 250px;
-    margin-top: -100px;
-    margin-bottom: 50px;
+    gap: 0.9375rem;
 
-    border-radius: 50%;
-    overflow: hidden;
-
-    align-self: center;
-    
-    transition: filter 0.3s ease-in-out;
-
-    &:hover{
-        filter: grayscale(100%);
+    @media (min-width: 980px) {
+        position: absolute;
+        transform: translateX(-20%);
     }
+`
+
+export const StyledButtonContainer = styled.div`
+    width: auto;
+    height: auto;
+
+    margin-top: 30px;
 `

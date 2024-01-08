@@ -1,14 +1,30 @@
-import { TextMenu } from "../../../styles/typograph";
-import { StyledMenu } from "./style";
-
+import { TextButton } from "../../../styles/typograph";
+import { StyledMenu, StyledItensMenu } from "./style";
+import { Link } from "react-scroll";
 
 export const ListMenu = () => {
     return (
         <StyledMenu>
-            <TextMenu>Home</TextMenu>
-            <TextMenu>Sobre mim</TextMenu>
-            <TextMenu>Projetos</TextMenu>
-            <TextMenu>Contatos</TextMenu>
+            <StyledItensMenu>
+                <Link to="about" smooth={true} duration={500}>
+                    <TextButton size="large">Sobre</TextButton>
+                </Link>
+            </StyledItensMenu>
+            <StyledItensMenu>
+                <Link to="skills" smooth={true} duration={500}>
+                    <TextButton size="large">Habilidades</TextButton>
+                </Link>
+            </StyledItensMenu>
+            <StyledItensMenu>
+                <Link to="projects" smooth={true} duration={500}>
+                    <TextButton size="large">Projetos</TextButton>
+                </Link>
+            </StyledItensMenu>
+            <StyledItensMenu>
+                <Link to="contacts" smooth={true} duration={500}>
+                    <TextButton size="large">Contatos</TextButton>
+                </Link>
+            </StyledItensMenu>
         </StyledMenu>
     )
 } 

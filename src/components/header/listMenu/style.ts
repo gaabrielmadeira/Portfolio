@@ -7,4 +7,9 @@ export const StyledMenu = styled.ul`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-grow: 1;
+`
+export const StyledItensMenu = styled.li`
+    display: flex;
+    align-items: center;
 `
